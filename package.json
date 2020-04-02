@@ -1,5 +1,5 @@
 {
-  "name": "Instant_Fileshare",
+  "name": "Instant_Drive",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,8 +7,10 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
+    "client:windows": "npm run start:windows --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "instant_drive": "concurrently \"npm run start\" \"npm run client\""
+    "instant_drive": "concurrently \"npm run start\" \"npm run client\"",
+    "instant_drive:windows": "concurrently \"npm run start\" \"npm run client:windows\""
   },
   "keywords": [],
   "author": "",
