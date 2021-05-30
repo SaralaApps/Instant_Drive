@@ -1,0 +1,1 @@
+call npm run instant_drive:windows
